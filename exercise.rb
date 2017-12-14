@@ -24,14 +24,14 @@ direction_second = trains[2][:direction]
 northbound_trains = []
 trains.each {|train|
   if train[:direction] == "north"
-    northbound_trains << train
+    northbound_trains << train[:train]
   end
 }
 # 5. Do the same thing for trains that travel east.
 eastbound_trains = []
 trains.each {|train|
   if train[:direction] == "east"
-    eastbound_trains << train
+    eastbound_trains << train[:train]
   end
 }
 # 6. You probably just ended up rewriting some of the same code. Move this repeated code into a method that accepts a direction and a list of trains as arguments, and returns a list of just the trains that go in that direction. Call this method once for north and once for east in order to DRY up your code.
@@ -39,7 +39,7 @@ def trains_in_direction(trains, direction)
   correct_trains = []
   trains.each { |train|
     if train[:direction] == direction
-      correct_trains << train
+      correct_trains << train[:train]
     end
   }
   return correct_trains
