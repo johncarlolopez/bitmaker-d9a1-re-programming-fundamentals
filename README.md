@@ -5,7 +5,7 @@
 ##Exercises
 ___
 Create the following array in Ruby:
-
+```
 [
 {train: "72C", frequency_in_minutes: 15, direction: "north"},
 {train: "72D", frequency_in_minutes: 15, direction: "south"},
@@ -16,6 +16,7 @@ Create the following array in Ruby:
 {train: "110", frequency_in_minutes: 15, direction: "north"},
 {train: "111", frequency_in_minutes: 15, direction: "south"}
 ]
+```
 1. Save the direction of train 111 into a variable.
 2. Save the frequency of train 80B into a variable.
 3. Save the direction of train 610 into a variable.
